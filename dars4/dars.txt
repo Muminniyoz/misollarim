@@ -1,0 +1,78 @@
+JavaScriptda mantiqiy ifodalar.
+
+Mulohaza deb rost yoki yolg'on deyish mumkin bo'lgan darak gapga aytiladi.
+
+Misol: Ahad Qayum millarder.
+
+Mulohazalar ustida ishlovchi fanga mantiq fani deyiladi.
+
+JavaScriptda rost yoki yolg'on qiymatni saqlash uchun boolean turidan 
+foydalaniladi.
+Qiyamti:
+true - rost, false - yolg'on.
+Misol: 
+let bugunYomgir = false;
+let bugunIliq = true;
+
+Mantiqiy operatorlar 
+
+1. VA 
+
+Ikki mulohaza o'rtasida kelib ikki mulohaza ham rost bo'lganda rost qiymat 
+qaytaruvchidir.
+JavaScriptda VA ni yozish uchun && ishlatiladi.
+let havoToza = bugunYomgir && bugunIliq; // false 
+VA amali ko'paytirishga o'xshaydi bitta nol (yolg'on) natijani nolga aylantiradi.
+
+2. YOKI 
+
+Ikki mulohaza o'rtasida kelib ikki mulohazadan hech bo'lmasa bittasi rost 
+bo'lganda rost qiymat qaytaruvchidir.
+JavaScriptda YOKI amali || operatori bilan yoziladi.
+
+let havoYaxshi = bugunYomgir || bugunIliq; // true 
+
+YOKI amali 0 va 1 lardan iborat sonlarni qo'shishga o'shaydi.
+Birorta 1 yig'indisi musbat qiladi.
+0 - bu yolg'on 1 - esa rost 
+
+3. INKOR 
+
+Biror mantiqiy ifodaga qo'yilib usha ifodani teskarisini qaytaruvchi operator.
+(emas).
+JavaScriptda INKOR amali ! bilan yoziladi.
+Misol: 
+let bugunHavoOchiq = !bugunYomgir; // true;
+let bugunIssiq  = !bugunIliq; // false 
+
+
+JavaScriptda taqqoslash operatorlari
+1. >     katta    
+2  <     kichik   
+3. >=   katta yoki teng 
+4. <=   kichik yoki teng 
+5. ==   teng (tur hisobga olinmaydi) 4 == "4"  true
+6. ===  teng (turni hisobga olganda) 4 === "4" false 
+7. !=   teng emas 
+8. !== teng emas (turni hisobga olganda )
+
+Ayrim mulohazalar.
+1. a soni musbat:   a > 0
+2. a soni manfiy:   a < 0
+3. a soni manfiy emas:  a >= 0
+4. a soni juft son:    a % 2 == 0
+5. a soni toq son:     a % 2 == 1 yoki a % 2 != 0
+6. a soni n soniga karrali:  a % n == 0
+
+
+
+
+
+
+
+
+
+
+
+
+

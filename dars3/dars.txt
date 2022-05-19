@@ -1,0 +1,169 @@
+JavaScriptda o'zgaruvchi nomlari katta kichik lotin harfalari,
+raqamlar va _, $ belgilari orqali nomlash mumkin.
+(raqamlar bosh belgi kelmasligi shart)
+To'g'ri: 
+let a;
+let a12;
+let abc$;
+var katta_hajm;
+let _AX;
+
+Noto'g'ri: 
+let 12a;
+let @abc;
+let katta hajm;
+
+o'zgaruvchilarni bitta let va var kalit so'zlar yordamida 
+e'lon qilish mumkin. Buning uchun ular ,(vergul) bilan 
+ajratiladi.
+Misol: 
+let a, b, c;
+JavaScriptda katta va kichik harflarda yozilgan o'zgaruvchilar 
+turli ded qaraladi.(case sentinitive)
+Quidagi o'zgaruvchilar turli o'zgaruvchilardir:
+let ism, ISM, Ism;
+
+JavaScriptda dasturchilar asosan camelCase(tuya) usulida 
+o'zgaruvchilarni nomlashlari standart bo'lib qolgan ammo majburiy
+emas. o'zgaruvchi va funksiyalar kichik harflarda yoziladi ammo 
+bo'luvchi harlfar katta harfda bo'ladi.
+O'zgarmas konstantalar hammasi katta harfda yoziladi.
+Klasslar bosh harf bilan yoziladi.
+Misol: 
+let kattaYuza = 123;
+let birinchiDarajaliYuza = 99;
+
+Dastur ishlash davomida o'zgarmas ma'lumotni saqlash uchun 
+o'zgarmaslardan foydalanildi. Ular const kalit so'zi bilan 
+e'lon qilinadi. Standart bo'yicha ular KATTA harflarda yoziladi.
+Misol: 
+const PI = 3.1416;
+const WIDTH = 1200;
+const HEIGHT = 800;
+const FONT_SIZE = 18;
+
+O'zlashtirish operatori:
+1. a = b;    - o'ng tomongdagi qiymatni chap tomondagi o'zgaruvhiga 
+beradi.
+2. a += b; -> a = a + b;
+3. a -= b; -> a = a - b;
+4. a *= b; -> a = a * b;
+5. a /= b; -> a = a / b;
+6. a **=b; -> a = a ** b;
+Misol:
+let a = 4;
+let b = 5;
+let a += b; // 4 + 5 = 9;
+O'zgaruvchi turlari
+O'zgaruvchiga beriladigan qiymatga qarab turli turlarga bo'linadi.
+
+1. let a = 3;      // number - int - butun son
+2. let a = 3.14;   // number - float - haqiqiy son .
+
+3. let a = "salom";
+   let a = 'kalom'; // string - satr.
+
+4. let t = true;
+   let t = false;   // boolean - mantiqiy
+
+5. let k;
+   let k = undefined; // undefined - qiymatlanmagan.
+
+6. let a = {...};
+   let b = [];
+   let t = new Klass();
+   let y = null;        // object - obyekt turi.
+
+O'zgaruvchi turini aniqlash uchun typeof operatoridan 
+foydalaniladi.
+Misol: 
+let a = "123";
+console.log(typeof a); // string 
+
+Turlarni almashtirish
+
+1. string -> number 
+let a = "123.4556";
+let b = parseInt(a);   // 123
+let f = parseFloat(a); // 123.4556
+let c = +a;            // 123.4556
+
+2. number -> string 
+let a = 123.456;
+let c = a + ""; 
+let b = a.toString();
+let k = a.toFixed(<xona aniqlik>);
+let p = a.toFixed(2); // "123.46"
+
+Matematik kutubxona:
+
+Har xil matematik hisob kitoblarni qilish uchun 
+JavaScriptda "Math" obyekti mavjud va unda keraki 
+metodlar oldin yozib qoyilgan.
+
+1. Math.abs(x) - x sonining modulu |x|
+2. Math.pow(a, b) - a soning b - darajasi a**b 
+3. Math.round(x)  - x sonini yaxlitlash
+4. Math.floor(x)  - x sonidan kichik yoki teng butun son 
+let k = Math.floor(4.9); // 4
+
+5. Math.ceil(x)  -  x sonidan katta yoki teng butun son 
+let k = Math.ceil(4.2); // 5
+
+6. Math.sqrt(x) - x soning kvadrat ildizi _/x
+
+7. Math.random() - 0 dan 1 gacha oraliqdagi tasodifiy son,
+8. Math.PI - pi soning aniqroq qiymati 
+9. Math.E  - exponentaning aniqroq qiymati.
+10. Math.pow(a, 1/n) - n - darajali ildiz hisoblash.
+
+
+Brauzerda ma'lumotlarni kiritish uchun prompt() funksiyasidan 
+foydalaniladi. U string turida qiymat qaytaradi.
+Misol: 
+let ism = prompt("Ismingizni kiriting:");
+let yosh = parseInt(prompt("yosh"));
+
+
+Butun sonlar 
+
+1. butun sonni 10 ga bo'lish uni orqadan bitta o'chiradi.
+Misol: 
+let a = 123;
+let b = parseInt(a / 10); // 12
+2. butun sonni 100 ga bo'lish uni orqadan 2 taga o'chiradi 
+let a = 123;
+let b = parseInt(a / 100); // 1
+3. butun 10^n ga bo'lish uni orqadan n xona o'chiradi.
+
+4. butun sonni 10 ga bo'lgandagi qoldiq oxirgi bitta raqamni 
+beradi.
+let a = 123;
+let b = a % 10; // 3
+5. butun sonni 10^n bo'lgandagi qoldiq oxirgi n ta raqamni beradi.
+
+Misol: ikki xonali sonni teskarisiga aylantiring
+let a = 48;
+let birlar = a % 10;
+let onlar  = parseInt(a / 10);
+let natija = birlar * 10 + onlar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

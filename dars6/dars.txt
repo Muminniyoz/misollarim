@@ -1,0 +1,59 @@
+Tarmoqlanish algoritmlari
+
+Agar algoritm biror ifodaning qiymatiga qarab ikki qismaga 
+ajralsa bunday algoritmlar tarmoqlanish algoritmlari deyiladi.
+
+Blok sxemada tarmoqlanish nuqtasi 
+robm shakli orqali ifodalaniladi.
+
+....
+
+Misol: Butun son berilgan agar u musbat bo'lsa 1 ga oshirilsin 
+aks holda o'zgartirilmasin. natija chiqarilsin.
+
+JavaScriptda tarmqolanish operatori
+
+JavaScriptda tarmoqlanish algoritmini qo'llash uchun
+if va if-else  operatorlari ishlatiladi.
+
+sintaksis: 
+if(<shart>){
+    <shart rost bo'lsa ishlovchi blok>
+}
+-------------
+if(<shart>){
+    <rost bo'lsa ishlaydi>
+} else {
+    <yolg'on bo'lsa ishlaydi>
+}
+-----
+ko'p shartli tekshriruv
+
+if(<shar1>){
+    ...   
+} else if(<shart2>){
+ ...
+} else if(<shart 3>){
+  ...
+} 
+...
+else {
+ ...
+}
+
+2 3 4
+5 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+

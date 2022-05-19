@@ -1,0 +1,20 @@
+Tasodifiy sonlar generatsiyasi.
+
+JavaScriptda tasodif son generatsiyasi qilish uchun 
+Math.random() funksiyasidan foydalaniladi.
+U [0, 1) orqliqdagai tasodifiy son generatsiya qiladi.
+Masalan: 0.0534, 0.00912
+Bu sonlarni 10 daralariga ko'paytirib ixtiyoriy xonali 
+son hosil qilish mumkin 
+Masalan: 0 dan 100 gacha bo'lgan butun son generatsiya qilish 
+let t = Math.floor(Math.random() * 100); // [0-99]
+-----
+a va b (a < b) sonlari orasidagi tasodify son hosil qilish 
+
+let t = Math.floor(Math.random()*(b-a)) + a; // [a, b)
+
+
+
+
+
+

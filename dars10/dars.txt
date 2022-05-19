@@ -1,0 +1,92 @@
+BigInt 
+JavaScripta katta sonlar bilan ishlash uchun BigInt dan 
+foydalaniladi.
+Biror butun sonni BigInt qilish uchun orqasiga n siffix qo'yiladi.
+
+Misol: 
+let a = 1234n;
+let b = BigInt(1234);
+let c = BigInt("1234");
+
+BigInt bilan arifmetika ammallar faqat BigInt bilan bo'lishi kerak.
+let k = 123n;
+let s = k*(k+1n)/2n;
+console.log(s);
+
+BigInt ni oddiy ko'rinishga keltirish uchun toString qilish kerak.
+
+let a = 123n;
+console.log(a); // 123n
+console.log(a.toString()); // 123
+
+
+JavaScriptda takrorlanish operatorlari.
+
+Takrorlanish deb bir xil amalni qayta qayta bajarishga aytiladi.
+
+Dasturlashda ikki takrolanish mavjud.
+1. Qadamli takrolanish
+2. Shartli takrolanish
+
+
+Qadamli takrorlanish 
+
+Bunday takrolanishlarda (siklda) takrolanish soni oldindan ma'lum 
+belgilangan bo'ladi.
+Misol: Chelakka 4 krushka suv sol. 
+
+Shartli takrolanish
+
+Bunday takrolanishlarda takrolanish davomiyligi biror mantiqy ifoda 
+qiymatiga qarab davom etadi. Takrorlanish soni oldindan ma'lum 
+bo'lmaydi.
+Misol: Chelakka to'lguncha suv sol.(shart: chelakning to'la masligi)
+
+
+JavaScripta for operatori 
+
+JavaScripta Qadamli siklni amalga oshirish uchun for operatoridan 
+foydalaniladi.
+
+Sintaksis:
+for(<sanovchini belgilash>; <shart>; <sanovchini o'zgartirish>){
+    <sikl tanasi>
+}
+sanovchi bu oddiy o'zgaruchi bo'lib siklni qadamlarni boshqarish 
+uchun ishlatiladi. 
+Asosan: i, j,k kabi lotin harflari olish odat bo'lib qolgan.
+Misol: 1 dan 100 gacha sonlarni chiqarish: 
+
+for(let i = 1; i<= 100; i++){
+    console.log(i);
+}
+
+
+JavaScripta while va do-while operatorlari 
+
+JavaScripta shartli takrolanishni amalga oshirish uchun  while 
+va do-while operatorlaridan foydalaniladi.
+Ularning farqi while shartni oldin tekshiradi, do-while esa 
+keyin tekshiradi.
+
+Sintaksis: 
+while(<shart>){
+    <sikl tanasi>
+}
+
+do {
+    <sikl tanasi>
+} while(<shart>);
+
+Misol: a sonining raqamlar soni toping.
+let a = 12345;
+let s = 0;
+while(a>0){
+    a = parseInt(a / 10);
+    s++;
+}
+console.log(s);
+
+
+
+

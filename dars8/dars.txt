@@ -1,0 +1,66 @@
+Ternar operatori 
+
+Biror o'zgaruvchiga qiymat berishda ikki qiymatdan 
+birini tanlash kerak bo'lsa bunday hollarga ternar operatori 
+ixsham ko'rinish beradi.
+
+Sintaksis: <shart> ? <ifoda1> : <ifoda2>
+<shart> rost bo'lsa <ifoda1> qaytariladi, aks holda <ifoda2> qaytariladi.
+Misol: ikkita sondan kattasini toping 
+let a = 4, b = 7;
+let c = a > b ? a : b;
+console.log(c); // 7
+
+
+Tanlash operatori 
+
+Bir nechta variantdan birini tanlash uchun JavaScripda 
+switch tanlash operatori ishlatiladi.
+
+Sintaksis: 
+
+switch(<qiymat>){
+    case <holat1>: <ifoda1>; break;
+    case <holat2>: <ifoda2>; break;
+    case <holat3>: <ifoda3>; break;
+    ...
+    default: <variant topilmasa>;
+}
+
+Misol: Hafta kuni sonda berilsa uni so'zda ifodalash
+
+let haftaKuni = 4;
+let haftaSuzda;
+
+switch(haftaKuni){
+    case 1: {
+        haftaSuzda = "Dushanba";
+    } break;
+    case 2: {
+        haftaSuzda = "Seshanba";
+    } break;
+    // ...
+
+    default: {
+        haftaSuzda = "Bunday hafta kuni yo'q"
+    }
+}
+console.log(haftaSuzda);
+
+agar break qo'yilmasa case topilgan joydan bajarish 
+ketma ket bajariladi.
+
+default - majburiy emas, ya'ni qo'yish yoki qo'ymaslik ixtiyoriy
+
+
+
+
+
+
+
+
+
+
+
+
+
